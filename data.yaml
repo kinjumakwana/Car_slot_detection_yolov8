@@ -1,0 +1,17 @@
+# train: ../train/images
+# val: ../valid/images
+# test: ../test/images
+
+train: C:/Users/BAPS/anaconda3/envs/tf/yolov8n_custom/Car_sloat/train/images
+val: C:/Users/BAPS/anaconda3/envs/tf/yolov8n_custom/Car_sloat/valid/images
+test: C:/Users/BAPS/anaconda3/envs/tf/yolov8n_custom/Car_sloat/test/images
+
+nc: 4
+names: ['Car', 'Empty-slot', 'Person', 'Slot-Occupied']
+
+roboflow:
+  workspace: kinjal-makwana-5xsba
+  project: Car_sloat
+  version: 3
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/kinjal-makwana-5xsba/Car_sloat/dataset/3
