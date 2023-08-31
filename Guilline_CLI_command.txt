@@ -1,0 +1,8 @@
+Train model:
+yolo task=detect mode=train model=yolov8n.pt data=./Car_sloat/data.yaml epochs=5 imgsz=640
+
+validate Model:
+yolo task=detect mode=val model= C:/Users/BAPS/runs/detect/train9/weights/best.pt data=./Car_sloat/data.yaml conf=0.5
+
+test images using custome model:
+yolo task=detect mode=predict model=C:/Users/BAPS/runs/detect/train9/weights/best.pt source=C:/Users/BAPS/anaconda3/envs/tf/yolov8n_custom/Car_sloat/images
